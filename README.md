@@ -12,7 +12,7 @@
 
 ## 👨‍💻 About Me
 
-I'm a **Data Engineer & Data Analyst** based in Bridgeport, CT, studying at **Fairfield University**.
+I'm a **Data Engineer & Data Analyst** based in Stamford, CT, studying at **Fairfield University**.
 
 - 🔧 Building end-to-end data pipelines with **Python, SQL, and cloud tools**
 - 🤖 Deploying ML models as live REST APIs using **FastAPI + XGBoost**
