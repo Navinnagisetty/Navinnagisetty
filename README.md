@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://www.linkedin.com/in/navinnagisetty/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="mailto:navinnagisetty@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/Navin1114-collab"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://github.com/navinnagisetty"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 </div>
 
 ---
@@ -62,7 +62,7 @@ I'm a **Data Engineer & Data Analyst** based in Stamford, CT, studying at **Fair
 
 [![Live API](https://img.shields.io/badge/Live%20API-00C851?style=for-the-badge&logo=render&logoColor=white)](https://california-housing-ml-ab74.onrender.com)
 [![API Docs](https://img.shields.io/badge/API%20Docs-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://california-housing-ml-ab74.onrender.com/docs)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Navin1114-collab/california-housing-ml)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navinnagisetty/california-housing-ml)
 
 ---
 
@@ -89,8 +89,8 @@ I'm a **Data Engineer & Data Analyst** based in Stamford, CT, studying at **Fair
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Navin1114-collab&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Navin1114-collab&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=navinnagisetty&show_icons=true&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=navinnagisetty&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
 </div>
 
 ---
