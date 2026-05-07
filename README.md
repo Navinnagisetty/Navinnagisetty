@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B+I'm+Navin+Kumar+Nagisetty;Data+Engineer+%7C+Lakehouse+Builder;Databricks+%7C+dbt+%7C+Airflow+%7C+Spark;Turning+Data+Into+Business+Decisions" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B+I'm+Navin+Kumar+Nagisetty;Data+Engineer+%7C+Healthcare+%7C+Retail+%7C+Finance;Databricks+%7C+AWS+%7C+dbt+%7C+Airflow+%7C+Spark;Finding+Patterns+That+Change+Decisions" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -7,6 +7,7 @@
   <a href="mailto:navinnagisetty@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/navinnagisetty"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
   <a href="https://california-housing-ml-ab74.onrender.com"><img src="https://img.shields.io/badge/Live_API-00C851?style=for-the-badge&logo=render&logoColor=white"/></a>
+  <a href="https://public.tableau.com/app/profile/navin.kumar.nagisetty/viz/GhostNetworkDetectionMedicareProviderAnalysis/GhostNetworkDetectionMedicareProviderDirectoryAnalysis"><img src="https://img.shields.io/badge/Live_Dashboard-E97627?style=for-the-badge&logo=tableau&logoColor=white"/></a>
 </div>
 
 <br/>
@@ -19,13 +20,16 @@
 
 ## 👨‍💻 About Me
 
-I'm a **Data Engineer** based in Fairfield, CT, Graduated from **Fairfield University**.
+I'm a **Data Analyst & Data Engineer** based in Fairfield, CT, graduated from **Fairfield University**.
 
-- 🏗️ Building production lakehouse pipelines on **Databricks · dbt · Airflow**
-- ⚡ Processing data at scale with **PySpark** and **Delta Lake**
-- 🤖 Integrating **LLMs into data pipelines** — Llama 3 via Databricks Mosaic AI
-- 📊 End-to-end: raw ingestion → feature engineering → ML → AI alerts → dashboards
+I don't build tutorials. I find real problems disclosed in SEC filings and government reports — and build the systems that address them.
+
+- 🏥 Built a ghost network detector that found **57.6% of Medicare mental health providers are unreachable** — a problem the Senate Finance Committee formally disclosed in 2023
+- 🏪 Built a demand forecasting lakehouse that quantified **$2.75M in Walmart inventory risk** — grounded in their SEC-disclosed material financial risk
+- ⚡ Processing data at scale with **PySpark, AWS Glue, Delta Lake** across millions of records
+- 🤖 Integrating **LLMs into production pipelines** — Llama 3 and Claude Haiku generating actionable alerts from structured data
 - 💼 Open to **Data Engineer** and **Data Analyst** roles
+
 ---
 
 ## 🛠️ Tech Stack
@@ -41,26 +45,54 @@ I'm a **Data Engineer** based in Fairfield, CT, Graduated from **Fairfield Unive
 
 **Cloud & Warehousing**
 
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=google-bigquery&logoColor=white)
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![Athena](https://img.shields.io/badge/Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 **ML & AI**
 
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logoColor=white)
 ![Llama3](https://img.shields.io/badge/Llama_3-7B3F00?style=for-the-badge&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_Haiku-D97706?style=for-the-badge&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
 **Languages & Visualization**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
 ---
 
 ## 🚀 Projects
+
+---
+
+### 🏥 Ghost Network Detection — AWS Healthcare Compliance Pipeline
+> 57.6% of listed Medicare mental health providers are unreachable. This system finds them.
+
+The Senate Finance Committee (May 2023) formally disclosed that more than 80% of Medicare Advantage mental health providers were unreachable when patients called. CMS 2025 mandates 90% compliance. This project ingests the full nationwide Medicare provider directory and detects ghost providers at scale.
+
+| Metric | Result |
+|--------|--------|
+| Providers scored | **2,857,460** — full US Medicare directory |
+| NPPES ground truth | **8M+** licensed providers |
+| Mental health ghost rate | **57.6%** — 38x higher than overall average |
+| Deactivated NPIs still listed | **6,900 providers** |
+| Providers sharing one phone | **6,803** — detected via graph analysis |
+| Highest ghost rate ZIP | **84.6%** — ZIP 68065 Nebraska |
+| Bedrock AI compliance alerts | **10** plain-English audit reports |
+| dbt tests | **11 / 11 passing** |
+| Orchestration | **Step Functions** · 5-step weekly pipeline |
+
+**Stack:** AWS Glue · Athena · Bedrock · Step Functions · NetworkX · dbt · Tableau · FastAPI
+
+[![GitHub](https://img.shields.io/badge/View_Project-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Navinnagisetty/ghost-network-detection)
+[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/navin.kumar.nagisetty/viz/GhostNetworkDetectionMedicareProviderAnalysis/GhostNetworkDetectionMedicareProviderDirectoryAnalysis)
 
 ---
 
@@ -117,7 +149,6 @@ Walmart disclosed in its 2025 Annual Report that inventory inaccuracy is a **mat
 
 - **Airflow + BigQuery + dbt + Looker Studio** full modern stack
 - Automated daily ingestion, transformation, and visualization
-- Production-grade orchestration with dependency management
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Navinnagisetty/gcp-stock-etl-pipeline)
 
@@ -146,8 +177,9 @@ Walmart disclosed in its 2025 Annual Report that inventory inaccuracy is a **mat
 
 ## 🤝 Let's Connect
 
-Actively looking for **Data Engineer** roles. I build production systems — not tutorials.
+Actively looking for **Data Engineer** and **Data Analyst** roles. I find real problems in government reports and SEC filings — then build the systems that address them.
 
 📧 navinnagisetty@gmail.com
 💼 [LinkedIn](https://www.linkedin.com/in/navinnagisetty/)
 🌐 [Live ML API](https://california-housing-ml-ab74.onrender.com)
+📊 [Live Tableau Dashboard](https://public.tableau.com/app/profile/navin.kumar.nagisetty/viz/GhostNetworkDetectionMedicareProviderAnalysis/GhostNetworkDetectionMedicareProviderDirectoryAnalysis)
